@@ -30,13 +30,9 @@ button{font-family:inherit}
 .strand i::after{content:'';position:absolute;left:-7px;top:-5px;width:21px;height:21px;border-radius:50%;background:radial-gradient(circle,var(--c) 0,transparent 68%);opacity:.75}
 .strand i::before{content:'';position:absolute;left:1.5px;top:-3px;width:4px;height:4px;border-radius:1px;background:#b8955e}
 @media(min-width:900px){
- .stage{align-items:center;padding:40px;background:radial-gradient(circle at 18% 20%,var(--g1),transparent 45%),radial-gradient(circle at 82% 80%,var(--g3),transparent 45%),var(--b1);transition:padding .4s}
- body.editing .stage{padding-right:480px}
- .device{width:400px;height:840px;max-height:calc(100vh - 60px);border-radius:60px;padding:12px;background:linear-gradient(145deg,#33203b,#120914);box-shadow:0 60px 120px -40px rgba(70,20,90,.55),inset 0 0 0 2px #4b2d55,0 0 0 1.5px rgba(198,162,107,.45)}
- .screen{height:100%;min-height:0;overflow-y:auto;border-radius:48px;padding-top:58px;scrollbar-width:none}
- .bgl{position:absolute;inset:12px;border-radius:48px}
- .screen::-webkit-scrollbar{display:none}
- .island{display:block;position:absolute;top:24px;left:50%;transform:translateX(-50%);width:112px;height:32px;border-radius:20px;background:#0b050d;z-index:6}
+ body.editing .stage{padding-right:460px;transition:padding .4s}
+ .device{max-width:520px}
+ .screen{padding-top:52px;padding-bottom:60px}
 }
 /* hero */
 .hero{text-align:center;position:relative}
