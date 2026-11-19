@@ -492,7 +492,7 @@ function render(){
  '<nav class="cards">'+cards+'</nav>'+galHTML(c)+regrasHTML(c)+
  '<footer class="foot">'+
  '<div class="soc"><a href="'+esc(waLink(c,c.mensagemPadrao))+'" target="_blank" rel="noopener" aria-label="WhatsApp">'+flatIcon('whatsapp')+'</a><a href="'+esc(igLink(c))+'" target="_blank" rel="noopener" aria-label="Instagram">'+flatIcon('instagram')+'</a></div>'+
- '<p class="tel">'+esc(fmtTel(c))+' · @'+esc(igUser(c))+'</p>'+(String(c.agradecimento||'').trim()?'<div class="thx"><span class="ln"></span><p>'+esc(c.agradecimento)+'</p><span class="ln"></span></div>':'')+'<p class="copy">'+br(c.rodape)+'</p><a class="cred" href="https://www.instagram.com/carvex_lab/" target="_blank" rel="noopener">site por <b>@carvex_lab</b></a></footer>'+
+ '<p class="tel">'+esc(fmtTel(c))+' · @'+esc(igUser(c))+'</p>'+(String(c.agradecimento||'').trim()?'<div class="thx"><span class="ln"></span><p>'+esc(c.agradecimento)+'</p><span class="ln"></span></div>':'')+'<p class="copy">'+br(c.rodape)+'</p><a class="cred" href="https://www.instagram.com/carvex_lab/" target="_blank" rel="noopener">Site desenvolvido por <b>@carvex_lab</b></a></footer>'+
  '</div></div></div>'+
  '<div class="sheet" id="sheet"><div class="bd" data-close></div><div class="pn"><div class="grab"></div><button class="x" data-close aria-label="Fechar">×</button><h3>'+esc(c.servicosTitulo)+'</h3><p class="sub">'+br(c.servicosIntro)+'</p>'+svcs+'<a class="cta" href="'+esc(waLink(c,c.mensagemPadrao))+'" target="_blank" rel="noopener">Falar no WhatsApp</a></div></div>';
  var s2=$('#screen');if(s2&&st)s2.scrollTop=st;
